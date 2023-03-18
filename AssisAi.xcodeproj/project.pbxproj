@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC524FEA29C64DED0002B201 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC524FE929C64DED0002B201 /* Constants.swift */; };
+		BC524FEC29C64E760002B201 /* OpenAiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC524FEB29C64E760002B201 /* OpenAiService.swift */; };
+		BC524FEF29C64F600002B201 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BC524FEE29C64F600002B201 /* Alamofire */; };
 		BCEFF33829C52C5400A6F14B /* AssisAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFF33729C52C5400A6F14B /* AssisAiApp.swift */; };
 		BCEFF33A29C52C5400A6F14B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFF33929C52C5400A6F14B /* ContentView.swift */; };
 		BCEFF33C29C52C5600A6F14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEFF33B29C52C5600A6F14B /* Assets.xcassets */; };
@@ -14,11 +17,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC524FE929C64DED0002B201 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC524FEB29C64E760002B201 /* OpenAiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAiService.swift; sourceTree = "<group>"; };
 		BCEFF33429C52C5400A6F14B /* AssisAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssisAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEFF33729C52C5400A6F14B /* AssisAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssisAiApp.swift; sourceTree = "<group>"; };
 		BCEFF33929C52C5400A6F14B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCEFF33B29C52C5600A6F14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEFF33E29C52C5600A6F14B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCEFF34729C530B700A6F14B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC524FEF29C64F600002B201 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +58,13 @@
 		BCEFF33629C52C5400A6F14B /* AssisAi */ = {
 			isa = PBXGroup;
 			children = (
+				BCEFF34729C530B700A6F14B /* Info.plist */,
 				BCEFF33729C52C5400A6F14B /* AssisAiApp.swift */,
 				BCEFF33929C52C5400A6F14B /* ContentView.swift */,
 				BCEFF33B29C52C5600A6F14B /* Assets.xcassets */,
 				BCEFF33D29C52C5600A6F14B /* Preview Content */,
+				BC524FE929C64DED0002B201 /* Constants.swift */,
+				BC524FEB29C64E760002B201 /* OpenAiService.swift */,
 			);
 			path = AssisAi;
 			sourceTree = "<group>";
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = AssisAi;
+			packageProductDependencies = (
+				BC524FEE29C64F600002B201 /* Alamofire */,
+			);
 			productName = AssisAi;
 			productReference = BCEFF33429C52C5400A6F14B /* AssisAi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = BCEFF32B29C52C5400A6F14B;
+			packageReferences = (
+				BC524FED29C64F600002B201 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = BCEFF33529C52C5400A6F14B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +155,8 @@
 			files = (
 				BCEFF33A29C52C5400A6F14B /* ContentView.swift in Sources */,
 				BCEFF33829C52C5400A6F14B /* AssisAiApp.swift in Sources */,
+				BC524FEA29C64DED0002B201 /* Constants.swift in Sources */,
+				BC524FEC29C64E760002B201 /* OpenAiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +288,7 @@
 				DEVELOPMENT_TEAM = 4Y666Y69SZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssisAi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +318,7 @@
 				DEVELOPMENT_TEAM = 4Y666Y69SZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AssisAi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC524FED29C64F600002B201 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC524FEE29C64F600002B201 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC524FED29C64F600002B201 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCEFF32C29C52C5400A6F14B /* Project object */;
 }
