@@ -10,4 +10,4 @@ ChatGpt SwiftUi Application
 </p>
 
 > A Simple SwiftUi App using the OpenAi Api to communicate with ChatGPT 
-to start using it, just insert your Api Key in the openAiKey var in ContentView.swift
+to start using it, just insert your Api Key in the openAiKey var in Constants.swift
