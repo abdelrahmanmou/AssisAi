@@ -124,4 +124,4 @@ extension MessageText {
         MessageText(id: UUID().uuidString, content: "Sample Message From ChatGpt", dateCreated: Date(), sender: .chatGpt)
     ]
 }
-//let openAIKey = "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"
+
