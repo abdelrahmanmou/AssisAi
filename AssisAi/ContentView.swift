@@ -5,7 +5,6 @@ struct ContentView: View {
     @State private var messageToSend = ""
     @State var cancellabels = Set<AnyCancellable>()
     let openAiService = OpenAiService()
-    let openAIKey = ""
     let apiURL = URL(string: "https://api.openai.com/v1/engines/davinci-codex/completions")!
     
     var body: some View {
